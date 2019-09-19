@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    <div>
-    <form action="" method="POST">
-        first name, last name, email, birthday, a dropdown to choose your favourite sport, and a text-area to include a small bio for the user
-       Firstname: <input type="text" data-type="text">
-       Lastname: <input type="text" data-type="text">
-       email: <input type="email" data-type="email">
-
-    </form>
+    <div class="form-container">
+        <form action="" method="POST">
+            <!-- first name, last name, email, birthday, a dropdown 
+    to choose your favourite sport, and a text-area to include a small bio for the user -->
+            Firstname:<br> 
+            <input type="text" data-type="text" id="firstname" required><br>
+            Lastname: <br>
+            <input type="text" data-type="text" id="lastname" required><br>
+            email: <br>
+             <input type="email" data-type="email" id="email" required><br>
+            birthday: <br>
+            <input type="date" name="" id="birthday"><br>
+            <div class="sports">
+                <select name="list-sports" id="sports">
+                    <option value="baseball">baseball</option>
+                    <option value="basketball">basketball</option>
+                    <option value="tennis">tennis</option>
+                    <option value="rugby">rugby</option>                    
+                </select>
+            <div class="user-description">
+                <textarea name="user-text" id="user-descrition" cols="50" rows="5"></textarea>
+            </div>  
+            <div class="user-submit">
+                <input type="submit" data-type="submit" value="submit">
+                <input type="reset" value="canel">
+            </div>  
+            </div>
+        </form>
     </div>
-    
-</body>
-</html>
 
+</body>
+
+</html>
