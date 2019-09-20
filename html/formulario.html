@@ -3,24 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="autor" content="choco">
+    <meta name="bootcamp" content="html5">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 
 <body>
     <div class="form-container">
-        <form action="" method="POST">
+        <form action="send" method="POST">
             <!-- first name, last name, email, birthday, a dropdown 
     to choose your favourite sport, and a text-area to include a small bio for the user -->
-            <fieldset>
+            <fieldset > 
                 <legend>personal-details</legend>
                 <label for="firstname"></label>
                 <p>Firstname:<input name="firstname" type="text" data-type="text" id="firstname" required></p>
                 <label for="lastname"></label>
                 <p>Lastname:<input name="lastname" type="text" data-type="text" id="lastname" required></p>
                 <label for="birthday"></label>
-                <p>birthday:<input type="date" name="" id="birthday"> </p>
+                <p>birthday:<input type="date" name="birthday" id="birthday"> </p>
                 <p>email:<input type="email" data-type="email" id="email" required></p>
                 <div class="sports">
                     <select name="list-sports" id="sports">
@@ -33,7 +35,9 @@
                     </select>
                 </div>
                 <div class="user-description">
-                    <textarea name="user-text" id="user-descrition" cols="50" rows="5"></textarea>
+                    <legend>user-description</legend>
+                    <label for="user-text"></label>
+                    <textarea name="user-text" id="user-descrition" cols="50" rows="5"></textarea>                    
                 </div>
             </fieldset>
             <div class="user-submit">
